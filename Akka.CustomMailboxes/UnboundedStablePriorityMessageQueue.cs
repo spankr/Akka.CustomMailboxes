@@ -60,7 +60,7 @@ namespace Akka.Dispatch.MessageQueues
         {
             if (_data.Count > 0)
             {
-                _data.Sort(_priority); // sort by priority
+                _data.Sort(_priority);
 
                 envelope = _data[0];
                 _data.RemoveAt(0);
